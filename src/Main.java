@@ -11,7 +11,10 @@ public class Main {
 
         System.out.println("Задача 1");
 
-        int[] weight = new int[]{1, 2, 3};
+        int[] weight = new int[3];
+        weight[0] = 1;
+        weight[1] = 2;
+        weight[2] = 3;
         double[] number = {1.57, 7.654, 9.986};
         int[] year = {2020, 2021, 2022, 2023};
     }
@@ -22,9 +25,27 @@ public class Main {
         int[] dog = new int[]{1, 2, 3};
         double[] many = {1.57, 7.654, 9.986};
         int[] cat = {10, 20, 30};
-        System.out.println(dog[0] + ", " + dog[1] + ", " + dog[2]);
-        System.out.println(many[0] + ", " + many[1] + ", " + many[2]);
-        System.out.println(cat[0] + ", " + cat[1] + ", " + cat[2]);
+        for (int i = 0; i < dog.length; i++) {
+            System.out.print(dog[i]);
+            if (i!= dog.length - 1){
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = 0; i < many.length; i++) {
+            System.out.print(many[i]);
+            if (i!= many.length - 1){
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = 0; i < cat.length; i++) {
+            System.out.print(cat[i]);
+            if (i!= cat.length - 1){
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
     }
     public static void task3() {
 
@@ -33,9 +54,28 @@ public class Main {
         int[] cow = new int[]{1, 2, 3};
         double[] dollars = {1.57, 7.654, 9.986};
         int[] ice = {112, 144, 248};
-        System.out.println(cow[2] + ", " + cow[1] + ", " + cow[0]);
-        System.out.println(dollars[2] + ", " + dollars[1] + ", " + dollars[0]);
-        System.out.println(ice[2] + ", " + ice[1] + ", " + ice[0]);
+        for (int i = cow.length - 1; i >= 0; i--) {
+           System.out.print(cow[i]);
+           if(i!=0){
+               System.out.print(", ");
+           }
+        }
+        System.out.println();
+        for (int i = dollars.length - 1; i >= 0; i--) {
+            System.out.print(dollars[i]);
+            if(i!=0){
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = ice.length - 1; i >= 0; i--) {
+            System.out.print(ice[i]);
+            if(i!=0){
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
     }
     public static void task4() {
 
